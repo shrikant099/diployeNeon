@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Count</title>
+    <style>
+        #productCount {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Total Products: <span id="productCount">0</span>
+    </div>
+
+    <script>
+        async function fetchProductCount() {
+            try {
+                const response = await fetch('/api/get/product', {
+                    method: 'GET',
+                    headers: {
+                        Accept: 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch products');
+                }
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Display total product count
+                    const productCount = data.products.length; // Or use data.totalProducts if provided
+                    document.getElementById('productCount').textContent = productCount;
+                } else {
+                    console.error('Error fetching products:', data.message);
+                }
+            } catch (error) {
+                console.error('Error in fetchProductCount:', error);
+            }
+        }
+
+        // Fetch product count on page load
+        fetchProductCount();
+    </script>
+</body>
+</html>
