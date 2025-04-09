@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
-            }
+            },
+            credentials: "include"
         });
 
         if (!fetchProductWithId.ok) {
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const response = await fetch(`/api/product/edit/${productId}`, {
                     method: "PUT",
                     body: formData,
+                    credentials: "include"
                 });
 
                 const result = await response.json();

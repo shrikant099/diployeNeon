@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('image', imageFile);
 
         try {
-            const response = await fetch('http://localhost:8001/api/admin/add/product', {
+            const response = await fetch('/api/admin/add/product', {
                 method: 'POST',
-                body: formData
+                body: formData,
+                credentials: "include"
             });
 
             const result = await response.json();

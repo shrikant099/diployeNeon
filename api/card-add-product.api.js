@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
-            }
+            },
+            credentials: "include"
         });
 
         if (!response.ok) {
@@ -65,6 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -134,6 +136,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -207,6 +210,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -277,6 +281,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -346,6 +351,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -416,6 +422,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -487,6 +494,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -555,6 +563,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -621,6 +630,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
@@ -689,6 +699,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 Accept: "application/json",
                                 "Content-Type": "application/json",
                             },
+                            credentials: "include"
                         });
                 
                         if (!updateClick.ok) {
