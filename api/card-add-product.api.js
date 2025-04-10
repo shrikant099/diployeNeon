@@ -525,6 +525,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const outdoorCommercial = document.querySelector('#outdoorAndCommercial');
             if (product.category === "Outdoor & Commercial") {
                 const imagePath = `/uploads/${product.productImage}`;
+                console.log("image path",imagePath);
+                
                 const productCard = document.createElement('div');
                 productCard.classList.add('product-card');
                 productCard.innerHTML = `
